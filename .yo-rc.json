@@ -27,7 +27,6 @@
     "clientPackageManager": "yarn",
     "testFrameworks": [
       "gatling",
-      "cucumber",
       "protractor"
     ],
     "jhiPrefix": "jhi",
