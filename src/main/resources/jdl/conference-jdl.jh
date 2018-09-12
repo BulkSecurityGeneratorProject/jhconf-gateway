@@ -1,0 +1,18 @@
+entity Speaker {
+	firstName String required,
+	lastName String required,
+    email String required,
+    twitter String required,
+	bio Blob
+}
+
+entity Session {
+	title String required,
+    description Blob,
+	startDateTime Instant required,
+    endDateTime Instant required	
+}
+
+relationship ManyToMany {
+	Speaker{sessions} to Session{speakers}
+}
